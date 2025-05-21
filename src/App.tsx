@@ -15,6 +15,12 @@ import VideoSessions from "./pages/admin/VideoSessions";
 import Notifications from "./pages/admin/Notifications";
 import Settings from "./pages/admin/Settings";
 import DoctorDashboard from "./pages/doctor/DoctorDashboard";
+import DoctorAppointments from "./pages/doctor/Appointments";
+import DoctorCarePlans from "./pages/doctor/CarePlans";
+import DoctorProgressLogs from "./pages/doctor/ProgressLogs";
+import DoctorVideoSessions from "./pages/doctor/VideoSessions";
+import DoctorNotifications from "./pages/doctor/Notifications";
+import DoctorProfile from "./pages/doctor/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,12 +48,12 @@ const App = () => (
           
           {/* Doctor Routes */}
           <Route path="/doctor" element={<DoctorDashboard />} />
-          <Route path="/doctor/appointments" element={<DoctorDashboard />} />
-          <Route path="/doctor/care-plans" element={<DoctorDashboard />} />
-          <Route path="/doctor/progress-logs" element={<DoctorDashboard />} />
-          <Route path="/doctor/video-sessions" element={<DoctorDashboard />} />
-          <Route path="/doctor/notifications" element={<DoctorDashboard />} />
-          <Route path="/doctor/profile" element={<DoctorDashboard />} />
+          <Route path="/doctor/appointments" element={<DoctorAppointments />} />
+          <Route path="/doctor/care-plans" element={<DoctorCarePlans />} />
+          <Route path="/doctor/progress-logs" element={<DoctorProgressLogs />} />
+          <Route path="/doctor/video-sessions" element={<DoctorVideoSessions />} />
+          <Route path="/doctor/notifications" element={<DoctorNotifications />} />
+          <Route path="/doctor/profile" element={<DoctorProfile />} />
           
           {/* Catch-all */}
           <Route path="*" element={<NotFound />} />
