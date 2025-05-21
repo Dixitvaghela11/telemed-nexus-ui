@@ -18,7 +18,7 @@ import {
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('patient');
+  const [role, setRole] = useState('doctor');
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -37,8 +37,6 @@ const Login = () => {
         navigate('/admin');
       } else if (role === 'doctor') {
         navigate('/doctor');
-      } else {
-        navigate('/patient');
       }
       
       // Show success message
@@ -122,7 +120,6 @@ const Login = () => {
               <SelectValue placeholder="Select role" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="patient">Patient</SelectItem>
               <SelectItem value="doctor">Doctor</SelectItem>
               <SelectItem value="admin">Admin</SelectItem>
             </SelectContent>

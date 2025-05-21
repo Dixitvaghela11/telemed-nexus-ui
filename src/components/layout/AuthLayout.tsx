@@ -26,7 +26,7 @@ const AuthLayout = ({ children, title, subtitle, authType }: AuthLayoutProps) =>
           <div className="mt-6 text-center border-t border-gray-100 pt-4">
             {authType === 'login' ? (
               <p className="text-sm text-gray-600">
-                Don't have an account? <Link to="/register" className="text-healthcare-blue font-medium hover:underline">Sign up</Link>
+                Are you a healthcare provider? <Link to="/register" className="text-healthcare-blue font-medium hover:underline">Apply here</Link>
               </p>
             ) : (
               <p className="text-sm text-gray-600">

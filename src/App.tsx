@@ -25,7 +25,7 @@ const App = () => (
           
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/admin/users" element={<AdminDashboard />} /> {/* Placeholder - would be real pages in full app */}
+          <Route path="/admin/users" element={<AdminDashboard />} />
           <Route path="/admin/appointments" element={<AdminDashboard />} />
           <Route path="/admin/care-plans" element={<AdminDashboard />} />
           <Route path="/admin/progress-logs" element={<AdminDashboard />} />
@@ -35,19 +35,12 @@ const App = () => (
           
           {/* Doctor Routes */}
           <Route path="/doctor" element={<DoctorDashboard />} />
-          <Route path="/doctor/appointments" element={<DoctorDashboard />} /> {/* Placeholder - would be real pages in full app */}
+          <Route path="/doctor/appointments" element={<DoctorDashboard />} />
           <Route path="/doctor/care-plans" element={<DoctorDashboard />} />
           <Route path="/doctor/progress-logs" element={<DoctorDashboard />} />
           <Route path="/doctor/video-sessions" element={<DoctorDashboard />} />
           <Route path="/doctor/notifications" element={<DoctorDashboard />} />
           <Route path="/doctor/profile" element={<DoctorDashboard />} />
-          
-          {/* Patient Routes */}
-          <Route path="/patient" element={<DoctorDashboard />} /> {/* Placeholder - would create real PatientDashboard */}
-          <Route path="/patient/appointments" element={<DoctorDashboard />} />
-          <Route path="/patient/care-plan" element={<DoctorDashboard />} />
-          <Route path="/patient/progress-log" element={<DoctorDashboard />} />
-          <Route path="/patient/profile" element={<DoctorDashboard />} />
           
           {/* Catch-all */}
           <Route path="*" element={<NotFound />} />

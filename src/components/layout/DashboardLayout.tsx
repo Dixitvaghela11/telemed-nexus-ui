@@ -22,7 +22,7 @@ interface SidebarItemProps {
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
-  role: 'admin' | 'doctor' | 'patient';
+  role: 'admin' | 'doctor';
 }
 
 const SidebarItem = ({ icon: Icon, label, to, isActive }: SidebarItemProps) => (
@@ -68,13 +68,7 @@ const DashboardLayout = ({ children, role }: DashboardLayoutProps) => {
         { icon: Settings, label: 'Profile', to: '/doctor/profile' },
       ];
     } else {
-      return [
-        { icon: User, label: 'Dashboard', to: '/patient' },
-        { icon: Bell, label: 'Appointments', to: '/patient/appointments' },
-        { icon: Settings, label: 'Care Plan', to: '/patient/care-plan' },
-        { icon: Bell, label: 'Progress Log', to: '/patient/progress-log' },
-        { icon: Settings, label: 'Profile', to: '/patient/profile' },
-      ];
+      return [];
     }
   };
 
@@ -146,7 +140,7 @@ const DashboardLayout = ({ children, role }: DashboardLayoutProps) => {
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="relative h-9 w-9 rounded-full">
                     <div className="h-9 w-9 rounded-full bg-healthcare-blue-light flex items-center justify-center text-healthcare-blue-dark font-medium">
-                      {role === 'admin' ? 'A' : role === 'doctor' ? 'D' : 'P'}
+                      {role === 'admin' ? 'A' : 'D'}
                     </div>
                   </Button>
                 </DropdownMenuTrigger>
