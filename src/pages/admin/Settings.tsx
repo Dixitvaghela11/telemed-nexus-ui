@@ -3,7 +3,7 @@ import React from 'react';
 import DashboardLayout from '@/components/layout/DashboardLayout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Settings as SettingsIcon, Users, Calendar, Bell, Mail, Lock, Server } from 'lucide-react';
+import { Settings as SettingsIcon, Users, Calendar, Bell, Mail, Lock, Server, Video } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
