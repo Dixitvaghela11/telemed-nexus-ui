@@ -7,6 +7,13 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import UserManagement from "./pages/admin/UserManagement";
+import Appointments from "./pages/admin/Appointments";
+import CarePlans from "./pages/admin/CarePlans";
+import ProgressLogs from "./pages/admin/ProgressLogs";
+import VideoSessions from "./pages/admin/VideoSessions";
+import Notifications from "./pages/admin/Notifications";
+import Settings from "./pages/admin/Settings";
 import DoctorDashboard from "./pages/doctor/DoctorDashboard";
 import NotFound from "./pages/NotFound";
 
@@ -25,13 +32,13 @@ const App = () => (
           
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/admin/users" element={<AdminDashboard />} />
-          <Route path="/admin/appointments" element={<AdminDashboard />} />
-          <Route path="/admin/care-plans" element={<AdminDashboard />} />
-          <Route path="/admin/progress-logs" element={<AdminDashboard />} />
-          <Route path="/admin/video-sessions" element={<AdminDashboard />} />
-          <Route path="/admin/notifications" element={<AdminDashboard />} />
-          <Route path="/admin/settings" element={<AdminDashboard />} />
+          <Route path="/admin/users" element={<UserManagement />} />
+          <Route path="/admin/appointments" element={<Appointments />} />
+          <Route path="/admin/care-plans" element={<CarePlans />} />
+          <Route path="/admin/progress-logs" element={<ProgressLogs />} />
+          <Route path="/admin/video-sessions" element={<VideoSessions />} />
+          <Route path="/admin/notifications" element={<Notifications />} />
+          <Route path="/admin/settings" element={<Settings />} />
           
           {/* Doctor Routes */}
           <Route path="/doctor" element={<DoctorDashboard />} />
